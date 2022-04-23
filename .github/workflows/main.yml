@@ -1,4 +1,4 @@
-name: A workflow for my Hello World file
+name: PMD Static Code Analyzer
 on: push
 
 jobs:
