@@ -1,12 +1,12 @@
-name: "Hello Actions"
-description: "Greet someone"
+name: "PMD"
+description: "PMD Static Code Analyzer"
 author: "octocat@github.com"
 
-inputs:
-  MY_NAME:
-    description: "Who to greet"
-    required: true
-    default: "World"
+#inputs:
+#  MY_NAME:
+ #   description: "Who to greet"
+ #   required: true
+  #  default: "World"
 
 runs:
   using: "docker"

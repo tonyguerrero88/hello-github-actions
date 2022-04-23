@@ -5,8 +5,11 @@ jobs:
   build:
     name: Hello world action
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-        with:
-          MY_NAME: "Mona"
+steps:
+  - uses: actions/setup-java@v2
+    with:
+      java-version: '11'
+      distribution: 'temurin'
+  - uses: pmd/pmd-github-action@v1
+    with:
+      rulesets: 'ruleset.xml'
